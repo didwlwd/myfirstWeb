@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a,button{
+    cursor: pointer;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+#wrap{
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #ff9c3f;
+}
+
+/* logo */
+
+#logo{
+    
+}
+
+#logo>a>img{
+    height: 80px;
+}
+
+#logo>a>img:hover{
+    scale: 0.98;
+}
+
+/* navi */
+
+#navi{
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#navi>ul{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+#navi>ul>li{
+    width: 100px;
+    flex: 1;
+    position: relative;
+}
+
+#navi>ul>li>span{
+    font-size: 25px;
+}
+
+#navi>ul>li>span:hover{
+    color: blueviolet;
+    font-size: 26px;
+}
+
+#navi>ul>li ul>li a{
+    font-size: 18px;
+}
+
+#navi>ul>li ul>li a:hover{
+    color: blueviolet;
+    font-size: 19px;
+}
+
+#navi>ul>li ul{
+    display: none;
+    position: absolute;
+    top: 35px; 
+    left: 10px;
+    width: calc(100% - 20px);
+    background: white;
+    padding: 10px 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#navi>ul li span:hover+ul{
+    display: block;
+}
+
+#navi>ul li ul:hover{
+    display: block;
+}
+
+/* search */
+
+#search{
+    position: relative;
+    width: 100%;
+    height: 38px;
+    box-sizing: content-box;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+#form{
+    display: block;
+}
+
+#inner_search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    padding: 0 10px 0 20px;
+    
+}
+
+#inner_text{
+    width: 100%;
+    flex: 1;
+}
+
+#inner_text>input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: black;
+}
+
+#btn{
+    width: 60px;
+    height: 100%;
+    border: none;
+    
+}
+
+#btn_search{
+    background: url(./image/search.png) no-repeat center/contain;
+    width: 100%;
+    height: 100%;
+    background-size: 20px 20px;
+    border: none;
+}
+
+#btn_search:hover{
+    scale: 1.02;
+}
+
+/* login */
+
+#login{
+    display: flex;
+}
+
+#login div{
+    margin: 5px;
+}
+
+#login button{
+    width: 50px;
+    height: 30px;
+    border: none;
+    color: white;
+}
+
+#login button:hover{
+    color: blueviolet;
+    scale: 1.04;
+}
+
+#login_button{
+    background: lightgreen;
+}
+
+#sign_up_button{
+    background: lightsalmon;
+}
+
+
+/* main-name */
+
+.main-name{
+    width: 100%;
+    text-align: center;
+}
+
+.main-name>h3{
+    font-size: 30px;
+}
+
+#movie-drama-all{
+    margin: 15px 10px;
+}
+
+
+/* main */
+
+#main{
+    display: flex;
+    margin: 0 180px 20px 180px;
+}
+
+.content-style{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    font-size: 12px;
+}
+
+.content-inner-style{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-inner-style div a{
+    width: 100px;
+    display: block;
+}
+
+.img-style{
+    margin: 5px 0;
+}
+
+.img-style a:hover{
+    color: blueviolet;
+}
+
+.img-style img{
+    width: 100px;
+    height: 120px;
+}
+
+/* movie-drama-news */
+
+#movie-drama-news h2{
+    border-bottom: 1px dotted black;
+    padding: 0 10px;
+    text-align: left;
+}
+
+#movie-drama-news>ul{
+    padding: 0 10px;
+}
+
+#movie-drama-news li{
+    border-bottom: 1px dotted black;
+    width: 100%;
+    height: 30px;
+}
+
+#movie-drama-news li span{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#movie-drama-news li>span>a{
+    width: auto;
+    display: flex;
+    color: #4e4c4c;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 4px;
+}
+
+#movie-drama-news li>span>a:hover{
+    color: blueviolet;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    height: 230px;
+    border: 1px solid black;
+}
+
+#footer-1{
+    width: 600px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#info{
+    display: block;
+}
+
+.box_info>span{
+    font-size: 12px;
+}
+
+#footer-2{
+    display: flex;
+    padding-top: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
+
+.question{
+    flex: 1;
+}
+
+.question span{
+    color: black;
+}
+
+.question ul{
+    padding-top: 5px;
+}
+
+.question ul li a{
+    font-size: 13px;
+    color: #a1a0a0;
+}
+
+.question ul li a:hover{
+    color: blueviolet;
+}

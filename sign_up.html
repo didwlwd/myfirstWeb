@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="icon" href="./image/logo.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            
+            font-size: 14px;
+            font-family: "Gowun Batang", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a,
+        button,input, li,label {
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: blueviolet;
+        }
+
+        #wrap {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* inner */
+        #inner {
+            
+        }
+
+        #inner img{
+            width: 50px;
+        }
+
+        #header_logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0 ;
+        }
+        
+
+        /* border_out */
+        #border_out {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #border_in {
+            width: 400px;
+        }
+
+        #border_in img {
+            width: 27px;
+        }
+
+        /* sign_up */
+
+        #sign_up {
+            height: 100%;
+
+        }
+
+        #sign_up input {
+            width: 100%;
+            border: none;
+        }
+
+        #id_pwd_email,
+        #name_birth_any {
+            margin: 20px 0;
+        }
+
+        .flex_all {
+            display: flex;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            padding: 10px;
+            gap: 10px;
+        }
+        #gender ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #gender ul li{
+            width: 100%;
+            text-align: center;
+            border: 1px solid lightgray;
+            padding-bottom: 12px;
+            font-size: 14px;
+        }
+        #gender ul li:hover{
+            border: 1px solid blueviolet;
+            color: blueviolet;
+        }
+
+        #gender ul li label input{
+            opacity: 0;
+        }
+
+        #submit_button{
+            padding-top: 170px;
+        }
+
+        #submit_button button{
+            width: 100%;
+            height: 38px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        #submit_button button:hover{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="inner">
+            <div id="header_logo">
+                <a href=""><img src="./image/logo.png" alt="메인로고"></a>
+            </div>
+            <div id="border_out">
+                <div></div>
+                <div id="border_in">
+                    <form action="">
+                        <div id="sign_up">
+                            <div id="id_pwd_email">
+                                <div id="id" class="flex_all">
+                                    <img src="./image/person.png" alt="아이디">
+                                    <input type="text" placeholder="아이디">
+                                </div>
+                                <div id="pwd" class="flex_all">
+                                    <img src="./image/lock.png" alt="비밀번호">
+                                    <input type="password" placeholder="비밀번호">
+                                </div>
+                                <div id="email" class="flex_all">
+                                    <img src="./image/mail.png" alt="이메일">
+                                    <input type="email" placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)">
+                                </div>
+                            </div>
+
+                            <div id="name_birth_any">
+                                <div class="flex_all">
+                                    <img src="./image/person.png" alt="이름">
+                                    <input type="text" placeholder="이름">
+                                </div>
+                                <div class="flex_all">
+                                    <img src="./image/calendar.png" alt="생년월일">
+                                    <input type="text" placeholder="생년월일8자리">
+                                </div>
+                                <div id="gender_button">
+                                    <div id="gender" class="flex_all">
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gender">
+                                                    <span>남자</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gender">
+                                                    <span>여자</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gender">
+                                                    <span>선택안함</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="phone" class="flex_all">
+                                    <img src="./image/smartphone.png" alt="휴대전화번호">
+                                    <input type="text" placeholder="휴대전화번호">
+                                </div>
+                            </div>
+
+                            <div id="submit_button">
+                                <button type="submit">인증요청</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div></div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
